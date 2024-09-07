@@ -19,6 +19,7 @@ code {
   display: inline-flex;
   gap: 20px;
 }
+
 .formWrap form select {
   width: 100%;
   max-width: calc(100% - 150px);
@@ -27,6 +28,7 @@ code {
   height: 40px;
   font-size: 16px;
 }
+
 .formWrap form button {
   background-color: #3498db;
   font-size: 15px;
