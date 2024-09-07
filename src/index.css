@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Stock Data */
+
+.formWrap form {
+  width: 100%;
+  display: inline-flex;
+  gap: 20px;
+}
+.formWrap form select {
+  width: 100%;
+  max-width: calc(100% - 150px);
+  flex: 0 1 auto;
+  cursor: pointer;
+  height: 40px;
+  font-size: 16px;
+}
+.formWrap form button {
+  background-color: #3498db;
+  font-size: 15px;
+  text-transform: capitalize;
+  padding: 8px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Loader */
+
+.loader {
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #3498db;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 1s linear infinite;
+  margin: 50px auto 0;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+
+
+@media(min-width: 992px) {
+  .formWrap {
+    max-width: 1500px;
+    margin: auto;
+  }
+
+  .formWrap form {
+    max-width: 500px;
+    margin: auto;
+  }
+}
